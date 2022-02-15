@@ -8,13 +8,14 @@
         <v-tabs-items v-model="tab">
             <v-tab-item v-for="item in items" :key="item.tab">
                 <v-card flat>
-                    <v-card-text>{{ item.content }}</v-card-text>
+                    <v-card-text>{{ item.content }} {{ t.golbal }}</v-card-text>
                 </v-card>
             </v-tab-item>
         </v-tabs-items>
     </v-card>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
     data() {
         return {
@@ -33,6 +34,9 @@ export default {
             ],
         }
     },
+    computed: mapState({
+        t: state => state.langData.cont
+    }),
 }
 
 </script>

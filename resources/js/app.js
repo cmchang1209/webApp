@@ -29,11 +29,13 @@ window.Vue = require('vue');
 
 import router from '@/router'
 import vuetify from '@/plugins/vuetify'
+import store from '@/store'
 import App from '@/App.vue'
 
 const app = new Vue({
     el: '#app',
     components: { App },
     router,
-    vuetify
+    vuetify,
+    store
 })
