@@ -31,13 +31,9 @@ import router from '@/router'
 import vuetify from '@/plugins/vuetify'
 import App from '@/App.vue'
 
-/*const app = new Vue({
+const app = new Vue({
     el: '#app',
+    components: { App },
     router,
     vuetify
-});*/
-new Vue({
-    router,
-    vuetify,
-    render: h => h(App),
-}).$mount('#app');
+})

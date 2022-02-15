@@ -7,9 +7,11 @@
 
 export default {
     name: 'App',
+    props: ['text'],
     components: {
     },
     created() {
+    	console.log(this.text)
     }
 }
 

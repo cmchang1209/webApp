@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/{any}', function () {
+/*Route::get('/{any}', function () {
     return view('app');
-})->where('any', '.*');
+})->where('any', '.*');*/
+Route::get('/{any}', 'SiteController@index')->where('any', '.*');
