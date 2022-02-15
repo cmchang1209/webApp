@@ -15,7 +15,6 @@
     </v-card>
 </template>
 <script>
-import { mapActions } from 'vuex'
 export default {
     data() {
         return {
@@ -35,7 +34,7 @@ export default {
         }
     },
     created() {
-        console.log(this.t('golbal', '1234'))
+        //console.log(this.t('golbal', '1234'))
     },
     methods: {
     }

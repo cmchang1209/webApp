@@ -32,7 +32,7 @@ mix
         },
     })
     .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/theme01/style.scss', 'public/css')
     .extract([
         'vue',
         'vue-router',
