@@ -6,12 +6,12 @@ export default {
 
     },
     mutations: {
-    	setLangCont(state, val) {
-    		state.cont = JSON.parse(val)
-    	}
+        setLangCont(state, val) {
+            state.cont = JSON.parse(val)
+        }
     },
     actions: {
-    	setLangCont: ({commit}, val) => {
+        setLangCont: ({ commit }, val) => {
             commit('setLangCont', val)
         }
     }

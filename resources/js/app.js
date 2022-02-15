@@ -26,6 +26,17 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import { mapState, mapGetters, mapActions } from 'vuex'
+
+Vue.mixin({
+	methods: {
+		...mapActions(['setLangCont']),
+		t(type, val) {
+			return this.$store.state.langData.cont[type][val]? this.$store.state.langData.cont[type][val] : val
+			//console.log(this.$store.state.langData.cont)
+		}
+	}
+})
 
 import router from '@/router'
 import vuetify from '@/plugins/vuetify'

@@ -4,7 +4,6 @@
     </v-app>
 </template>
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex'
 export default {
     name: 'App',
     props: ['text'],
@@ -13,8 +12,7 @@ export default {
         this.setLangCont(this.text)
     },
     methods: {
-        ...mapActions(['setLangCont'])
-    },
+    }
 }
 
 </script>
