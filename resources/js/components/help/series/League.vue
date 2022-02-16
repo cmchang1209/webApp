@@ -1,7 +1,7 @@
 <template>
     <div class="help-series-league-page">
         <v-card flat>
-            <v-card-text>seriesLeague</v-card-text>
+            <v-card-text>seriesLeague1</v-card-text>
         </v-card>
     </div>
 </template>
