@@ -2,8 +2,61 @@
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* bar */
+
+.toolbar .theme--light.v-toolbar.v-sheet {
+  background: linear-gradient(to right, #124A7B, #58ADE4) !important;
+  color: white !important;
+}
+
+.toolbar .theme--light.v-toolbar.v-sheet i {
+  color: white !important;
+}
+
+.toolbar .toolbar-title {
+  position: absolute;
+  width: 100%;
+  margin-left: -16px;
+  font-size: 1.2rem;
+  letter-spacing: 0.25rem;
+}
+
+.toolbar a {
+  z-index: 1000;
+}
+
+.help-index-page .list a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* border */
+
+.bb-1 {
+  border-bottom: 0.15rem solid;
+}
+
+.ba-1 {
+  border: 0.15rem solid;
+}
+
+.b-gray {
+  border-color: #e3e3e3;
+}
+
 .help-index-page .list {
   height: 3rem;
   line-height: 3rem;
+  letter-spacing: 0.15rem;
 }
 

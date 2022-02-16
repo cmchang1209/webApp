@@ -6,7 +6,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue = require('vue')
 
 /**
  * The following block of code may be used to automatically register your
@@ -31,9 +31,12 @@ import { mapActions } from 'vuex'
 Vue.mixin({
 	methods: {
 		...mapActions(['setLangCont']),
-		t(type, val) {
-			return this.$store.state.langData.cont[type][val]? this.$store.state.langData.cont[type][val] : val
-			//console.log(this.$store.state.langData.cont)
+		$t(type, val) {
+			let str = val
+			if(this.$store.state.langData.cont[type] && this.$store.state.langData.cont[type][val]) {
+				str = this.$store.state.langData.cont[type][val]
+			}
+			return str
 		}
 	}
 })

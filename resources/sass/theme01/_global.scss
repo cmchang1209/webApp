@@ -1,3 +1,40 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    transition: all .1s;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+
+/* bar */
+.toolbar {
+
+	.theme--light.v-toolbar.v-sheet {
+		background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+		color: white !important;
+
+		i {
+			color: white !important;
+		}
+	}
+
+    .toolbar-title {
+        position: absolute;
+        width: 100%;
+        margin-left: -16px;
+        font-size: 1.2rem;
+        letter-spacing: .25rem;
+    }
+
+    a {
+    	z-index: 1000;
+    }
+}

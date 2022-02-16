@@ -36,6 +36,6 @@ mix
     .extract([
         'vue',
         'vue-router',
-        'vuetify',
+        //'vuetify', 不能提出來，會報錯
     ])
     .sourceMaps();
