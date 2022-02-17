@@ -171,7 +171,7 @@ export default {
                 var filename = `FIDODARTS ${this.$t('help', 'Hard dart series table')}.${type}`
                 // download
                 div.innerHTML = ''
-                this.saveFile(imgData, filename)
+                //this.saveFile(imgData, filename)
             })
         },
         saveFile(data, filename) {
