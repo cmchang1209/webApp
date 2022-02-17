@@ -123,7 +123,8 @@ export default {
                 values: [
                     [25, '9~15', '100.20~', '107.37~', '5.00~', '893~', '1.2~']
                 ]
-            }]
+            }],
+            wk: null
         }
     },
     methods: {
@@ -171,7 +172,7 @@ export default {
                 var filename = `FIDODARTS ${this.$t('help', 'Hard dart series table')}.${type}`
                 // download
                 div.innerHTML = ''
-                //this.saveFile(imgData, filename)
+                this.saveFile(imgData, filename)
             })
         },
         saveFile(data, filename) {
