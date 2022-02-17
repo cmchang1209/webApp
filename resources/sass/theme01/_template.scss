@@ -92,10 +92,19 @@
         }
 
         .download-warp {
-        	padding: 16px;
-        	background-color: white;
+            padding: 16px;
+            background-color: white;
             position: absolute;
             top: -9999px;
         }
+    }
+
+    .help-series-introduce-page {
+    	.divider {
+    		height: .25rem;
+    		background: linear-gradient(to right, $dark-blue, white) !important;
+    		margin-left: -16px;
+    		margin-right: -16px;
+    	}
     }
 }

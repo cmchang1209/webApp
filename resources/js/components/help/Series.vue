@@ -1,6 +1,6 @@
 <template>
     <div class="help-series-page">
-        <v-container fluid>
+        <v-container fluid class="pa-0">
             <v-tabs v-model="tab" center-active show-arrows grow>
                 <v-tab v-for="item in items" :key="item.tab">
                     {{ $t('help', item.tab) }}
