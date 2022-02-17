@@ -2,7 +2,7 @@
     <div class="help-series-table-page">
         <v-container fluid class="pb-1">
             <div ref="downloadArea" class="mb-3">
-                <p class="font-weight-black">FIDODARTS {{ $t('help', 'Hard dart series table') }}</p>
+                <p class="font-weight-black">FIDODARTS1 {{ $t('help', 'Hard dart series table') }}</p>
                 <v-simple-table class="series-table">
                     <thead>
                         <tr>
