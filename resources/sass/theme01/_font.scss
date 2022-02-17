@@ -1,7 +1,26 @@
 .help-index-page {
-	.list {
-		a {
-			color: $font-color-base;
-		}
-	}
+    .list {
+        a {
+            color: $font-color-base;
+        }
+    }
+}
+
+.help-series-page {
+    .help-series-table-page {
+        .series-table table {
+            thead tr {
+                th {
+                    color: white !important;
+                }
+            }
+
+            tbody tr td {
+                &.fixed {
+                	font-size: 1.25rem;
+                	font-weight: 500;
+                }
+            }
+        }
+    }
 }

@@ -29,16 +29,23 @@ window.Vue = require('vue')
 import { mapActions } from 'vuex'
 
 Vue.mixin({
-	methods: {
-		...mapActions(['setLangCont']),
-		$t(type, val) {
-			let str = val
-			if(this.$store.state.langData.cont[type] && this.$store.state.langData.cont[type][val]) {
-				str = this.$store.state.langData.cont[type][val]
-			}
-			return str
-		}
-	}
+    methods: {
+        ...mapActions(['setLangCont', 'setOverlay']),
+        $t(type, val) {
+            let str = val
+            if (this.$store.state.langData.cont[type] && this.$store.state.langData.cont[type][val]) {
+                str = this.$store.state.langData.cont[type][val]
+            }
+            return str
+        },
+        ucfirst(str) {
+            str = str.toLowerCase()
+            var reg = /\b(\w)|\s(\w)/g //  \b判斷邊界\s判斷空格
+            return str.replace(reg, function(m) {
+                return m.toUpperCase()
+            });
+        }
+    }
 })
 
 import router from '@/router'

@@ -1,7 +1,101 @@
 .help-index-page {
-	.list {
-		height: 3rem;
-		line-height: 3rem;
-		letter-spacing: .15rem;
-	}
+    .list {
+        height: 3rem;
+        line-height: 3rem;
+        letter-spacing: .15rem;
+    }
+}
+
+.help-series-page {
+    .help-series-table-page {
+        .series-table {
+            div.v-data-table__wrapper:not(.auto-height) {
+                height: calc(100vh - 232px);
+                overflow-y: auto;
+            }
+
+            table {
+
+                thead tr {
+
+                    th {
+                        position: sticky;
+                        top: 0;
+                        background-color: $dark-blue;
+
+                        &:first-child {
+                            z-index: 2;
+                            left: 0;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            &.fixed {
+                                position: sticky;
+                                left: 0;
+                            }
+                        }
+
+                        &.c {
+                            td {
+                                background-color: $c-bg;
+
+                                &.fixed {
+                                    color: $c-font;
+                                }
+                            }
+                        }
+
+                        &.b {
+                            td {
+                                background-color: $b-bg;
+
+                                &.fixed {
+                                    color: $b-font;
+                                }
+                            }
+                        }
+
+                        &.a {
+                            td {
+                                background-color: $a-bg;
+
+                                &.fixed {
+                                    color: $a-font;
+                                }
+                            }
+                        }
+
+                        &.s {
+                            td {
+                                background-color: $s-bg;
+
+                                &.fixed {
+                                    color: $s-font;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                th,
+                td {
+                    white-space: nowrap;
+                    text-align: center !important;
+                    border-right: 1px solid white !important;
+                    border-bottom: 1px solid white !important;
+                }
+            }
+        }
+
+        .download-warp {
+        	padding: 16px;
+        	background-color: white;
+            position: absolute;
+            top: -9999px;
+        }
+    }
 }

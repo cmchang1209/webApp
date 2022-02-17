@@ -28,7 +28,7 @@ export default {
         }
     },
     created() {
-        this.title = this.$route.name
+        this.title = this.ucfirst(this.$route.name)
     },
     methods: {}
 }

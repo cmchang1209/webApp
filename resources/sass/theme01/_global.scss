@@ -17,14 +17,16 @@ a {
 /* bar */
 .toolbar {
 
-	.theme--light.v-toolbar.v-sheet {
-		background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
-		color: white !important;
+    position: sticky;
 
-		i {
-			color: white !important;
-		}
-	}
+    .theme--light.v-toolbar.v-sheet {
+        background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+        color: white !important;
+
+        i {
+            color: white !important;
+        }
+    }
 
     .toolbar-title {
         position: absolute;
@@ -35,6 +37,6 @@ a {
     }
 
     a {
-    	z-index: 1000;
+        z-index: 1000;
     }
 }

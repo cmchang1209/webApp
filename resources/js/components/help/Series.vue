@@ -6,11 +6,11 @@
                     {{ $t('help', item.tab) }}
                 </v-tab>
             </v-tabs>
-            <v-tabs-items v-model="tab">
+            <v-tabs-items v-model="tab" touchless>
                 <v-tab-item v-for="item in items" :key="item.tab">
-                    <series-table v-if="item.tab === 'seriesTable'" />
-                    <series-introduce v-else-if="item.tab === 'introduce'" />
-                    <series-game v-else-if="item.tab === 'game'" />
+                    <series-table v-if="item.tab === 'Series Table'" />
+                    <series-introduce v-else-if="item.tab === 'Introduce'" />
+                    <series-game v-else-if="item.tab === 'Game'" />
                     <series-league v-else />
                 </v-tab-item>
             </v-tabs-items>
@@ -34,10 +34,10 @@ export default {
         return {
             tab: null,
             items: [
-                { tab: 'seriesTable' },
-                { tab: 'introduce' },
-                { tab: 'game' },
-                { tab: 'league' }
+                { tab: 'Series Table' },
+                { tab: 'Introduce' },
+                { tab: 'Game' },
+                { tab: 'League' }
             ],
         }
     },
