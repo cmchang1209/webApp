@@ -19,11 +19,11 @@
                                                     {{ $t('help', 'Game') }}
                                                 </small>
                                             </td>
-                                            <td rowspan="6">
-                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
-                                                    <path d="m5 82.5 h10 v-70.5 h10"></path>
-                                                    <path d="m15 82.5 v70.5 h10"></path>
-                                                </svg> -->
+                                            <td rowspan="6" style="vertical-align: top;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
+                                                    <path d="m5 79 h10 v-66 h10"></path>
+                                                    <path d="m15 79 v66 h10"></path>
+                                                </svg>
                                             </td>
                                             <td>
                                                 <small class="text-dark-blue">
