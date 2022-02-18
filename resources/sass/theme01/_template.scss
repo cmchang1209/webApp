@@ -7,6 +7,14 @@
 }
 
 .help-series-page {
+
+    .divider {
+        height: .25rem;
+        background: linear-gradient(to right, $dark-blue, white) !important;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
     .help-series-table-page {
         .series-table {
             div.v-data-table__wrapper:not(.auto-height) {
@@ -100,12 +108,6 @@
     }
 
     .help-series-introduce-page {
-        .divider {
-            height: .25rem;
-            background: linear-gradient(to right, $dark-blue, white) !important;
-            margin-left: -16px;
-            margin-right: -16px;
-        }
 
         .type-item {
             background-repeat: no-repeat;

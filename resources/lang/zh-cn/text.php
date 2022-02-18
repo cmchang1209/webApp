@@ -28,7 +28,7 @@ return [
 		"Included in series calculation" => "列入级数计算",
 		"Not included in series calculation" => "不列入级数计算"
 	],
-	"help-introduce" => [
+	"help-series-introduce" => [
 		[
 			"title" => "什么是 FIDODARTS 硬式飞镖级数表？",
 			"contants" => [

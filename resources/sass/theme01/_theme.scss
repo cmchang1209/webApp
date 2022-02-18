@@ -11,3 +11,11 @@
 .b-gray {
     border-color: $gray;
 }
+
+/* li */
+.no-list-style {
+	padding-left: 12px !important;
+	li {
+		list-style-type: none;
+	}
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="help-series-introduce-page">
         <v-container fluid>
-            <div v-for="(item, key) in $store.state.langData.cont['help-introduce']" :key="'introduce-'+key">
+            <div v-for="(item, key) in $store.state.langData.cont['help-series-introduce']" :key="'introduce-'+key">
                 <p class="font-weight-black">{{ item.title }}</p>
                 <div class="divider"></div>
                 <div class="pa-3">

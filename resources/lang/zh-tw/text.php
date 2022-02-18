@@ -28,7 +28,7 @@ return [
 		"Included in series calculation" => "列入級數計算",
 		"Not included in series calculation" => "不列入級數計算"
 	],
-	"help-introduce" => [
+	"help-series-introduce" => [
 		[
 			"title" => "什麼是 FIDODARTS 硬式飛鏢級數表？",
 			"contants" => [
@@ -49,6 +49,53 @@ return [
 					"單人01遊戲",
 					"01 遊戲 DIDO",
 					"單人米老鼠"
+				]
+			]
+		]
+	],
+	"help-series-game" => [
+		[
+			"title" => "一般遊戲",
+			"contants" => [
+				"ols" => [
+					[
+						"title" => "根據該遊戲近30場歷史戰績,進行「級數計算」",
+						"contants" => ["（10場以上成績，APP才可呈現級數）"],
+						"uls" => [
+							[
+								"title" => "01遊戲（OI/DO）& PRO 501（含網路對戰01遊戲）",
+								"contants" => [
+									"近30場AVG加總平均",
+									"利用總平均AVG，級數表，並依比例方式取得更精細的級數",
+									"OI/OO模式下另取30場AVG加總平均"
+								],
+							],
+							[
+								"title" => "米老鼠（含網路對戰米老鼠）",
+								"contants" => [
+									"近30場MPR加總平均",
+									"利用總平均MPR，查詢級數表，並依比例方式取得更精細的級數"
+								]
+							],
+							[
+								"title" => "高分賽（含網路對戰高分賽）",
+								"contants" => [
+									"近30場得分加總平均"
+								]
+							],
+							[
+								"title" => "密集度",
+								"contants" => [
+									"近30場密集度平方值加總平均",
+									"利用總平均密集度，查詢級數表，並依比例方式取得更精細的級數"
+								]
+							]
+						]
+					],
+					[
+						"title" => "單場遊戲級數",
+						"contants" => ["遊戲結束後，FIDODARTS飛鏢機遊戲結算畫面，及App的歷史戰績內可查詢某單場遊戲級數"],
+					]
 				]
 			]
 		]
