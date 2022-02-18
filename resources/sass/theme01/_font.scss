@@ -1,3 +1,7 @@
+.text-dark-blue {
+    color: $dark-blue;
+}
+
 .help-index-page {
     .list {
         a {
@@ -20,6 +24,13 @@
                 	font-size: 1.25rem;
                 	font-weight: 500;
                 }
+            }
+        }
+    }
+    .help-series-introduce-page {
+        .v-card {
+            .v-toolbar {
+                color: white;
             }
         }
     }

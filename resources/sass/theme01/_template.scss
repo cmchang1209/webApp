@@ -100,11 +100,63 @@
     }
 
     .help-series-introduce-page {
-    	.divider {
-    		height: .25rem;
-    		background: linear-gradient(to right, $dark-blue, white) !important;
-    		margin-left: -16px;
-    		margin-right: -16px;
-    	}
+        .divider {
+            height: .25rem;
+            background: linear-gradient(to right, $dark-blue, white) !important;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        .type-item {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 65%;
+            background-image: url("../images/league_logo.png");
+
+            &:first-child {
+                background-image: url("../images/fido_logo.png");
+            }
+
+            table {
+                margin: 0 auto;
+                tr {
+                    td {
+                        &:nth-child(2) {
+                            width: 30px;
+                        }
+
+                        &:first-child,
+                        &:last-child {
+                            max-width: calc((100% - 30px) / 2);
+                        }
+
+                        svg {
+                            height: 100%;
+                            width: 100%;
+                            path {
+                                stroke: $font-color-base;
+                                stroke-width: 1px;
+                                fill-opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .v-card {
+            border: none;
+            background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+            border-radius: 8px;
+            padding: 2px;
+            .v-toolbar {
+                background: inherit;
+            }
+            .v-card__text {
+                background: white;
+                border-bottom-left-radius: 6px !important;
+                border-bottom-right-radius: 6px !important;
+            }
+        }
     }
 }

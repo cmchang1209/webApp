@@ -6,7 +6,7 @@
                     <v-toolbar>
                         <router-link :to="{ path: '/help' }">
                             <v-btn icon>
-                                <v-icon>fas fa-angle-left</i></v-icon>
+                                <v-icon>fas fa-angle-left</v-icon>
                             </v-btn>
                         </router-link>
                         <div class="toolbar-title text-center">{{ $t('help', title) }}</div>
