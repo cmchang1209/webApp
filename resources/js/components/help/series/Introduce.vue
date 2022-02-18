@@ -9,7 +9,7 @@
                         <small>{{ contant }}</small>
                     </p>
                     <template v-if="key === 1">
-                        <v-row no-gutters align="center" justify="center">
+                        <v-row no-gutters align="center">
                             <v-col cols="6" class="type-item">
                                 <table>
                                     <tbody>
@@ -50,10 +50,10 @@
                                                     {{ $t('help', 'League') }}
                                                 </small>
                                             </td>
-                                            <td rowspan="6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,104">
-                                                    <path d="m5 55 h10 v-43 h10"></path>
-                                                    <path d="m15 55 v43 h10"></path>
+                                            <td rowspan="6" style="vertical-align: top;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,106">
+                                                    <path d="m5 53 h10 v-40 h10"></path>
+                                                    <path d="m15 53 v40 h10"></path>
                                                 </svg>
                                             </td>
                                             <td>
@@ -80,11 +80,11 @@
                                     {{ $t('help', 'Included in series calculation') }}
                                 </v-toolbar-title>
                             </v-toolbar>
-                             <v-card-text>
-                                 <p v-for="(calculation, key2) in item.calculations[0]" :key="'calculation-'+key2" class="mb-0">
-                                     <small>{{ calculation }}</small>
-                                 </p>
-                             </v-card-text>
+                            <v-card-text>
+                                <p v-for="(calculation, key2) in item.calculations[0]" :key="'calculation-'+key2" class="mb-0">
+                                    <small>{{ calculation }}</small>
+                                </p>
+                            </v-card-text>
                         </v-card>
                         <v-card outlined class="mt-5">
                             <v-toolbar dense flat>
@@ -93,11 +93,11 @@
                                     {{ $t('help', 'Not included in series calculation') }}
                                 </v-toolbar-title>
                             </v-toolbar>
-                             <v-card-text>
-                                 <p v-for="(calculation, key3) in item.calculations[1]" :key="'no-calculation-'+key3" class="mb-0">
-                                     <small>{{ calculation }}</small>
-                                 </p>
-                             </v-card-text>
+                            <v-card-text>
+                                <p v-for="(calculation, key3) in item.calculations[1]" :key="'no-calculation-'+key3" class="mb-0">
+                                    <small>{{ calculation }}</small>
+                                </p>
+                            </v-card-text>
                         </v-card>
                     </template>
                 </div>

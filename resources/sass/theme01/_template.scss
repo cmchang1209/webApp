@@ -120,6 +120,7 @@
 
             table {
                 margin: 0 auto;
+
                 tr {
                     td {
                         &:nth-child(2) {
@@ -133,7 +134,8 @@
 
                         svg {
                             height: 100%;
-                            width: 100%; 
+                            position: absolute;
+
                             path {
                                 stroke: $font-color-base;
                                 stroke-width: 1px;
@@ -150,9 +152,11 @@
             background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
             border-radius: 8px;
             padding: 2px;
+
             .v-toolbar {
                 background: inherit;
             }
+
             .v-card__text {
                 background: white;
                 border-bottom-left-radius: 6px !important;
