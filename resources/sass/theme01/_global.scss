@@ -17,7 +17,8 @@ a {
 /* bar */
 .toolbar {
 
-    position: sticky;
+    position: fixed;
+    z-index: 9999;
 
     .theme--light.v-toolbar.v-sheet {
         background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
@@ -39,4 +40,8 @@ a {
     a {
         z-index: 1000;
     }
+}
+
+.has-toolbar-container {
+    padding-top: 56px;
 }

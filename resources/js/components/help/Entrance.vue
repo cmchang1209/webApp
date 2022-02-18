@@ -1,20 +1,20 @@
 <template>
     <div class="help-entrance-page">
-        <v-container fluid>
+        <v-container fluid class="toolbar">
             <v-row class="child-flex">
-                <div class="toolbar">
-                    <v-toolbar>
-                        <router-link :to="{ path: '/help' }">
-                            <v-btn icon>
-                                <v-icon>fas fa-angle-left</v-icon>
-                            </v-btn>
-                        </router-link>
-                        <div class="toolbar-title text-center">{{ $t('help', title) }}</div>
-                    </v-toolbar>
-                </div>
+                <v-toolbar>
+                    <router-link :to="{ path: '/help' }">
+                        <v-btn icon>
+                            <v-icon>fas fa-angle-left</v-icon>
+                        </v-btn>
+                    </router-link>
+                    <div class="toolbar-title text-center">{{ $t('help', title) }}</div>
+                </v-toolbar>
             </v-row>
         </v-container>
-        <router-view />
+        <div class="has-toolbar-container">
+            <router-view />
+        </div>
     </div>
 </template>
 <script>
