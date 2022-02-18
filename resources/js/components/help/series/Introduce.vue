@@ -20,10 +20,10 @@
                                                 </small>
                                             </td>
                                             <td rowspan="6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
                                                     <path d="m5 82.5 h10 v-70.5 h10"></path>
                                                     <path d="m15 82.5 v70.5 h10"></path>
-                                                </svg>
+                                                </svg> -->
                                             </td>
                                             <td>
                                                 <small class="text-dark-blue">
@@ -51,10 +51,10 @@
                                                 </small>
                                             </td>
                                             <td rowspan="6">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,30,158">
                                                     <path d="m5 82.5 h10 v-62.5 h10"></path>
                                                     <path d="m15 82.5 v62.5 h10"></path>
-                                                </svg>
+                                                </svg> -->
                                             </td>
                                             <td>
                                                 <small class="text-dark-blue">
