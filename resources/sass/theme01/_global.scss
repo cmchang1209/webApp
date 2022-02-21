@@ -1,6 +1,5 @@
 html, body {
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
 .cursor-pointer {
