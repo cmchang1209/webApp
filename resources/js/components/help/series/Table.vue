@@ -186,6 +186,7 @@ export default {
             link.href = data;
             document.body.appendChild(link);
             setTimeout(function() {
+                alert('ok')
                 link.click();
                 // Cleanup the DOM 
                 document.body.removeChild(link);
