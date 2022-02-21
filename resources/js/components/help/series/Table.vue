@@ -160,10 +160,10 @@ export default {
                 taintTest: false,
             }).then((canvas) => {
 
-                canvas.toBlob((blob) => {
+                /*canvas.toBlob((blob) => {
                     saveAs(blob, "pretty image.png")
                 })
-                return
+                return*/
 
                 var type = 'png'
                 var imgData = canvas.toDataURL(type)
@@ -179,6 +179,7 @@ export default {
                 var filename = `FIDODARTS ${this.$t('help', 'Hard dart series table')}.${type}`
                 // download
                 div.innerHTML = ''
+                saveAs(imgData, filename)
                 //this.saveFile(imgData, filename)
             })
         },
