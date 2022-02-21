@@ -17,6 +17,8 @@ export default {
     }),
     created() {
         this.setLangCont(this.text)
+        let vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
     },
     methods: {}
 }
