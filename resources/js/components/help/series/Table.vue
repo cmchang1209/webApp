@@ -184,8 +184,9 @@ export default {
             var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
             save_link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data))
             save_link.setAttribute('download', filename)
+            save_link.innerHTML = "Download"
             //save_link.style.display = 'none';
-            document.body.appendChild(save_link);
+            document.body.appendChild(save_link)
 
             //save_link.click();
 
