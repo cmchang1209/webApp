@@ -202,7 +202,7 @@ export default {
                 }
             }
             xhr.send()*/
-            window.open(data, '_blank')
+            window.open('https://www.google.com', '_blank')
         }
     }
 }
