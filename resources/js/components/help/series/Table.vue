@@ -27,7 +27,6 @@
                     <v-btn block @click="download">
                         {{ $t('golbal', 'Download') }}
                     </v-btn>
-                    <img ref="test" src="" style="width: 100%" />
                 </v-col>
             </v-row>
         </v-container>
@@ -129,7 +128,7 @@ export default {
     },
     methods: {
         download() {
-            //this.setOverlay()
+            this.setOverlay()
             var div = this.$refs.downloadWarp
             var area = this.$refs.downloadArea
             div.innerHTML = ''
@@ -159,11 +158,6 @@ export default {
                 taintTest: false,
             }).then((canvas) => {
 
-                /*canvas.toBlob((blob) => {
-                    saveAs(blob, "pretty image.png")
-                })
-                return*/
-
                 var type = 'png'
                 var imgData = canvas.toDataURL(type)
                 var _fixType = (type) => {
@@ -182,45 +176,18 @@ export default {
             })
         },
         saveFile(data, filename) {
-            var img = new Image()
-            img.crossOrigin = "Anonymous"
-            img.id = "getshot"
-            img.src = data
-            document.body.appendChild(img)
-
-            var a = document.createElement("a")
-            a.href = img.src
-            a.download = filename
-            a.click();
-            //document.body.removeChild(img)
             /**
              * 在本地進行文件保存
              * {String} data     要保存到本地的圖片數據
              * {String} filename 文件名
              */
             //創建一個命名空間。是 a 標籤
-            /*var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
+            var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
             save_link.href = data
             save_link.download = filename
             var event = document.createEvent('MouseEvents')
             event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
-            save_link.dispatchEvent(event)*/
-            /*var xhr = new XMLHttpRequest()
-            xhr.open('GET', data, true)
-            xhr.responseType = 'blob'
-            xhr.onload = (e) => {
-                console.log(xhr)
-                if (xhr.status == 200) {
-                    var myBlob = xhr.response
-                    var link = document.createElement('a')
-                    link.href = window.URL.createObjectURL(myBlob)
-                    link.download = "yourname.png"
-                    link.click()
-                    this.setOverlay()
-                }
-            }
-            xhr.send()*/
-            //window.open('https://www.google.com', '_blank')
+            save_link.dispatchEvent(event)
         }
     }
 }

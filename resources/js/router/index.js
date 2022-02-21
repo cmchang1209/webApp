@@ -10,6 +10,8 @@ import HelpEntrance from '@/components/help/Entrance'
 import HelpSeries from '@/components/help/Series'
 import HelpHandicap from '@/components/help/Handicap'
 
+import HelpTest from '@/components/help/Test'
+
 
 export default new VueRouter({
     mode: 'history',
@@ -35,6 +37,10 @@ export default new VueRouter({
                     path: 'handicap',
                     name: 'handicap',
                     component: HelpHandicap
+                }, {
+                    path: 'test',
+                    name: 'test',
+                    component: HelpTest
                 }]
             }]
         },

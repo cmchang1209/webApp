@@ -18,7 +18,8 @@ export default {
         return {
             items: [
                 { name: 'Series' },
-                { name: 'Handicap' }
+                { name: 'Handicap' },
+                { name: 'Test' }
             ],
         }
     },
