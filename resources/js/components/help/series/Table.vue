@@ -138,7 +138,7 @@ export default {
             var rect = div.getBoundingClientRect()
             var width = rect.width
             var height = rect.height
-            console.log(width, height)
+            //console.log(width, height)
             //設置 canvas 畫布的寬高 是容器搞度 2倍、爲了是圖片清晰
             /**1.創建畫布
              * 2.設置canvas 大小
@@ -181,22 +181,27 @@ export default {
              * {String} filename 文件名
              */
             //創建一個命名空間。是 a 標籤
-            var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
-            save_link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data))
-            save_link.setAttribute('download', filename)
-            save_link.innerHTML = "Download"
-            //save_link.style.display = 'none';
-            document.body.appendChild(save_link)
-
-            //save_link.click();
-
-            //document.body.removeChild(save_link);
-            /*save_link.href = data
+            /*var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
+            save_link.href = data
             save_link.download = filename
             var event = document.createEvent('MouseEvents')
             event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
             save_link.dispatchEvent(event)*/
-            this.setOverlay()
+            var xhr = new XMLHttpRequest()
+            xhr.open('GET', data, true)
+            xhr.responseType = 'blob'
+            xhr.onload = (e) => {
+                console.log(xhr)
+                if (xhr.status == 200) {
+                    var myBlob = xhr.response
+                    var link = document.createElement('a')
+                    link.href = window.URL.createObjectURL(myBlob)
+                    link.download = "yourname.png"
+                    link.click()
+                    this.setOverlay()
+                }
+            }
+            xhr.send()
         }
     }
 }
