@@ -27,6 +27,7 @@
                     <v-btn block @click="download">
                         {{ $t('golbal', 'Download') }}
                     </v-btn>
+                    <a href="../../images/fido_logo.png" download >test</a>
                 </v-col>
             </v-row>
         </v-container>
