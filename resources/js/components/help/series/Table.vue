@@ -187,7 +187,7 @@ export default {
             var event = document.createEvent('MouseEvents')
             event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
             save_link.dispatchEvent(event)*/
-            var xhr = new XMLHttpRequest()
+            /*var xhr = new XMLHttpRequest()
             xhr.open('GET', data, true)
             xhr.responseType = 'blob'
             xhr.onload = (e) => {
@@ -201,7 +201,8 @@ export default {
                     this.setOverlay()
                 }
             }
-            xhr.send()
+            xhr.send()*/
+            window.open(data, '_blank')
         }
     }
 }
