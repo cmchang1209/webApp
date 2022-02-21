@@ -36,7 +36,6 @@
 </template>
 <script>
 import html2canvas from 'html2canvas'
-import { saveAs } from 'file-saver'
 export default {
     data() {
         return {
@@ -179,13 +178,21 @@ export default {
                 var filename = `FIDODARTS ${this.$t('help', 'Hard dart series table')}.${type}`
                 // download
                 div.innerHTML = ''
-                saveAs(imgData, filename)
-                //this.saveFile(imgData, filename)
+                this.saveFile(imgData, filename)
             })
         },
         saveFile(data, filename) {
-            var img = this.$refs.test
+            var img = new Image()
+            img.crossOrigin = "Anonymous"
+            img.id = "getshot"
             img.src = data
+            document.body.appendChild(img)
+
+            var a = document.createElement("a")
+            a.href = img.src
+            a.download = filename
+            a.click();
+            //document.body.removeChild(img)
             /**
              * 在本地進行文件保存
              * {String} data     要保存到本地的圖片數據
