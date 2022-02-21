@@ -3,7 +3,7 @@
         <v-container fluid>
             <v-row no-gutters>
                 <v-col cols="10" offset="1">
-                    <a href="./images/test.png" download="test.png">
+                    <a href="../images/test.png" download="test.png">
                         <v-btn block>
                             {{ $t('golbal', 'Download') }}
                         </v-btn>
