@@ -27,6 +27,7 @@
                     <v-btn block @click="download">
                         {{ $t('golbal', 'Download') }}
                     </v-btn>
+                    <img ref="test" src="" style="width: 100%" />
                 </v-col>
             </v-row>
         </v-container>
@@ -128,7 +129,7 @@ export default {
     },
     methods: {
         download() {
-            this.setOverlay()
+            //this.setOverlay()
             var div = this.$refs.downloadWarp
             var area = this.$refs.downloadArea
             div.innerHTML = ''
@@ -175,6 +176,8 @@ export default {
             })
         },
         saveFile(data, filename) {
+            var img = this.$refs.test
+            img.src = data
             /**
              * 在本地進行文件保存
              * {String} data     要保存到本地的圖片數據
@@ -202,7 +205,7 @@ export default {
                 }
             }
             xhr.send()*/
-            window.open('https://www.google.com', '_blank')
+            //window.open('https://www.google.com', '_blank')
         }
     }
 }
