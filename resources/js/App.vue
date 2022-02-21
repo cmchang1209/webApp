@@ -1,9 +1,9 @@
 <template>
     <v-app>
-        <!-- <router-view /> -->
-        <!-- <v-overlay :value="overlay">
+        <router-view />
+        <v-overlay :value="overlay">
             <v-progress-circular indeterminate color="amber" :size="50"></v-progress-circular>
-        </v-overlay> -->
+        </v-overlay>
     </v-app>
 </template>
 <script>
