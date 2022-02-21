@@ -178,6 +178,18 @@ export default {
         saveFile(data, filename) {
             var img = this.$refs.test
             img.src = data
+
+            var link = document.createElement("a");
+            link.download = filename;
+            link.target = "_blank";
+            // Construct the URI 
+            link.href = data;
+            document.body.appendChild(link);
+            setTimeout(function() {
+                link.click();
+                // Cleanup the DOM 
+                document.body.removeChild(link);
+            }, 500);
             /**
              * 在本地進行文件保存
              * {String} data     要保存到本地的圖片數據
