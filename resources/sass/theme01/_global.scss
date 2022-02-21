@@ -1,5 +1,6 @@
 html, body {
     overflow: hidden;
+    height: 100%;
 }
 
 .cursor-pointer {
@@ -47,9 +48,10 @@ a {
 }
 
 .has-toolbar-container {
+    position: fixed;
     padding-top: 56px;
     overflow: auto;
     -webkit-overflow-scrolling:touch;
     min-height: 101%;
-
+    width: 100%;
 }
