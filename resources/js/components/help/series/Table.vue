@@ -188,6 +188,7 @@ export default {
             var event = document.createEvent('MouseEvents')
             event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
             save_link.dispatchEvent(event)
+            this.setOverlay()
         }
     }
 }
