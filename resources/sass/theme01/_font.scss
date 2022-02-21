@@ -21,17 +21,18 @@
 
             tbody tr td {
                 &.fixed {
-                	font-size: 1.25rem;
-                	font-weight: 500;
+                    font-size: 1.25rem;
+                    font-weight: 500;
                 }
             }
         }
     }
-    .help-series-introduce-page {
-        .v-card {
-            .v-toolbar {
-                color: white;
-            }
+
+    .help-series-introduce-page {}
+
+    .ex.v-card {
+        .v-toolbar, .v-card__title {
+            color: white;
         }
     }
 }

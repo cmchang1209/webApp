@@ -26,7 +26,8 @@ return [
 		"Individual season level" => "个人赛季级数",
 		"Team Season Level" => "队伍赛季级数",
 		"Included in series calculation" => "列入级数计算",
-		"Not included in series calculation" => "不列入级数计算"
+		"Not included in series calculation" => "不列入级数计算",
+		"Example" => "举例"
 	],
 	"help-series-introduce" => [
 		[

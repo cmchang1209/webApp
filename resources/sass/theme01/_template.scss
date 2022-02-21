@@ -148,22 +148,22 @@
                 }
             }
         }
+    }
 
-        .v-card {
-            border: none;
-            background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
-            border-radius: 8px;
-            padding: 2px;
+    .ex.v-card {
+        border: none;
+        background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+        border-radius: 8px;
+        padding: 2px;
 
-            .v-toolbar {
-                background: inherit;
-            }
+        .v-toolbar {
+            background: inherit;
+        }
 
-            .v-card__text {
-                background: white;
-                border-bottom-left-radius: 6px !important;
-                border-bottom-right-radius: 6px !important;
-            }
+        .v-card__text {
+            background: white;
+            border-bottom-left-radius: 6px !important;
+            border-bottom-right-radius: 6px !important;
         }
     }
 }

@@ -26,7 +26,8 @@ return [
 		"Individual season level" => "個人賽季級數",
 		"Team Season Level" => "隊伍賽季級數",
 		"Included in series calculation" => "列入級數計算",
-		"Not included in series calculation" => "不列入級數計算"
+		"Not included in series calculation" => "不列入級數計算",
+		"Example" => "舉例"
 	],
 	"help-series-introduce" => [
 		[
@@ -95,6 +96,50 @@ return [
 					[
 						"title" => "單場遊戲級數",
 						"contants" => ["遊戲結束後，FIDODARTS飛鏢機遊戲結算畫面，及App的歷史戰績內可查詢某單場遊戲級數"],
+					]
+				]
+			]
+		]
+	],
+	"help-series-league" => [
+		[
+			"title" => "聯賽",
+			"contants" => [
+				"在聯賽中共有四種級數"
+			],
+			"uls" => [
+				[
+					"title" => "個人聯賽級數",
+					"contants" => [
+						"四種遊戲(01 OI/OO、01 OI/DO、CRICKET、COUNT UP)於聯賽中近30場的遊戲數據為依據計算而成。玩家報名該聯賽時，取玩家四種遊戲各近30場的一般遊戲數據，並將這四筆級數平均後，做為起始聯賽級數。若玩家未打滿以上四筆級數則無法進行讓級讓分規則。"
+					],
+					"exs" => [
+						[
+							"01 OI/OO 級數 17.93",
+							"01 OI/DO 級數 11.52",
+							"CRICKET 級數 6.11",
+							"COUNTUP 級數 4.7",
+							"個人聯賽級數為",
+							"（17.93 + 11.52 + 6.11+4.7）/ 4 = <em class='red--text text--lighten-1'>10.06</em>"
+						]
+					]
+				],
+				[
+					"title" => "隊伍聯賽級數",
+					"contants" => [
+						"以玩家為單位，將隊伍所有玩家的個人聯賽級數加總後平均。"
+					]
+				],
+				[
+					"title" => "個人賽季級數",
+					"contants" => [
+						"以玩家於該聯賽賽季中的所有遊戲數據（不限30場）為依據計算，每個遊戲有一個獨立的賽季級數。"
+					]
+				],
+				[
+					"title" => "隊伍賽季級數",
+					"contants" => [
+						"以玩家為單位，將該隊伍所有玩家的賽季級數加總後平均。"
 					]
 				]
 			]

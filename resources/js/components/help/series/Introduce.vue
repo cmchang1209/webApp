@@ -73,7 +73,7 @@
                                 </table>
                             </v-col>
                         </v-row>
-                        <v-card outlined class="mt-5">
+                        <v-card outlined class="mt-5 ex">
                             <v-toolbar dense flat>
                                 <v-toolbar-title class="text-body-2">
                                     <v-icon class="mr-3" color="lime" small>far fa-circle</v-icon>
@@ -86,7 +86,7 @@
                                 </p>
                             </v-card-text>
                         </v-card>
-                        <v-card outlined class="mt-5">
+                        <v-card outlined class="mt-5 ex">
                             <v-toolbar dense flat>
                                 <v-toolbar-title class="text-body-2">
                                     <v-icon class="mr-3" color="pink" small>fas fa-times</v-icon>
