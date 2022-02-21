@@ -189,7 +189,7 @@ export default {
 
             //save_link.click();
 
-            document.body.removeChild(save_link);
+            //document.body.removeChild(save_link);
             /*save_link.href = data
             save_link.download = filename
             var event = document.createEvent('MouseEvents')
