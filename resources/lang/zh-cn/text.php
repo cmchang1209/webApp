@@ -7,7 +7,7 @@ return [
 	],
 	"help" => [
 		"Series" => "级数",
-		"Handicap" => "讓級讓分",
+		"Handicap" => "让级让分",
 		"Series Table" => "级数表",
 		"Introduce" => "级数介绍",
 		"Game" => "一般游戏",
@@ -31,7 +31,10 @@ return [
 		"Example" => "举例",
 		"Level by no" => ":params 级",
 		"Handicap per step" => "每差一级距让分",
-		"Rt difference" => "级数差"
+		"Rt difference" => "级数差",
+		"RT" => "级数",
+		"PTS" => "让分",
+		"Mark" => "让划"
 	],
 	"help-series-introduce" => [
 		[
@@ -180,6 +183,11 @@ return [
 			"contants" => [
 				"每一级距让分见下表"
 			]
+		]
+	],
+	"help-handicap-cricket" => [
+		[
+			"title" => "米老鼠",
 		]
 	]
 ];

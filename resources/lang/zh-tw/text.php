@@ -3,7 +3,7 @@
 return [
 	"golbal" =>	[
 		"Download" => "下載",
-		"Game" => "遊戲"
+		"Game" => "遊戲",
 	],
 	"help" => [
 		"Series" => "級數",
@@ -31,7 +31,10 @@ return [
 		"Example" => "舉例",
 		"Level by no" => ":params 級",
 		"Handicap per step" => "每差一級距讓分",
-		"Rt difference" => "級數差"
+		"Rt difference" => "級數差",
+		"RT" => "級數",
+		"PTS" => "讓分",
+		"Mark" => "讓劃"
 	],
 	"help-series-introduce" => [
 		[
@@ -179,6 +182,15 @@ return [
 			"title" => "01 遊戲",
 			"contants" => [
 				"每一級距讓分見下表"
+			]
+		]
+	],
+	"help-handicap-cricket" => [
+		[
+			"title" => "米老鼠",
+			"contants" => [
+				"每一級距讓18分，最高讓12級。",
+				"每一級距讓1劃，最高讓8級。"
 			]
 		]
 	]

@@ -172,7 +172,9 @@
 }
 
 .help-handicap-page {
-    .help-handicap-01Game-page {
+
+    .help-handicap-01Game-page,
+    .help-handicap-cricket-page {
         .v-data-table {
             background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
             border-radius: 0;
