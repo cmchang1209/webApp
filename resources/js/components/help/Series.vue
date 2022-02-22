@@ -8,7 +8,7 @@
             </v-tabs>
             <v-tabs-items v-model="tab" touchless>
                 <v-tab-item v-for="item in items" :key="item.tab">
-                    <series-table v-if="item.tab === 'Series Table'" />
+                    <series-table v-if="item.tab === 'RT Table'" />
                     <series-introduce v-else-if="item.tab === 'Introduce'" />
                     <series-game v-else-if="item.tab === 'Game'" />
                     <series-league v-else />
@@ -34,7 +34,7 @@ export default {
         return {
             tab: null,
             items: [
-                { tab: 'Series Table' },
+                { tab: 'RT Table' },
                 { tab: 'Introduce' },
                 { tab: 'Game' },
                 { tab: 'League' }

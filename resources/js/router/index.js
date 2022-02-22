@@ -30,8 +30,8 @@ export default new VueRouter({
                 path: '',
                 component: HelpEntrance,
                 children: [{
-                    path: 'series',
-                    name: 'series',
+                    path: 'rating',
+                    name: 'rating',
                     component: HelpSeries
                 }, {
                     path: 'handicap',

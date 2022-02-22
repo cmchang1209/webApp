@@ -8,7 +8,7 @@ return [
 	"help" => [
 		"Series" => "级数",
 		"Handicap" => "让级让分",
-		"Series Table" => "级数表",
+		"RT Table" => "级数表",
 		"Introduce" => "级数介绍",
 		"Game" => "一般游戏",
 		"League" => "联赛",
