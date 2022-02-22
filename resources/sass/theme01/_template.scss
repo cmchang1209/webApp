@@ -180,31 +180,24 @@
 
             td,
             th {
-                /* border-bottom-width: 0 !important; */
-                border-color: rgba(0,0,0,0) !important;
-            }
+                border-bottom-width: 0 !important;
+                padding-left: 1px;
+                padding-right: 0;
+                padding-bottom: 1px;
 
-            tbody tr td {
-                /* vertical-align: top;
-                padding-left: 0;
-                padding-right: 1px;
-                position: relative; */
-                background-color: white;
-                border-right: 1px solid;
-
-                &:first-child {
-                    /* padding-left: 1px; */
-
-                    div {
-                        width: calc(100% - 2px);
-                        margin-left: 1px;
-                    }
+                &:last-child {
+                    padding-right: 1px;
                 }
 
                 div {
-                    position: absolute;
-                    width: calc(100% - 1px);
-                    height: calc(100% - 1px);
+                    height: 31px;
+                    line-height: 31px;
+                }
+            }
+
+            tbody tr td {
+
+                div {
                     background-color: white;
                 }
             }

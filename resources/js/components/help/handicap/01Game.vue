@@ -34,17 +34,26 @@
                         <template v-slot:default>
                             <thead>
                                 <tr>
-                                    <th>1</th>
-                                    <th>2</th>
+                                    <th><div class="pl-4">1</div></th>
+                                    <th colspan="4"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-center pa-0" style="width: 40%;">
-                                        1
+                                    <td style="width: 40%;">
+                                        <div class="pl-4">1</div>
                                     </td>
-                                    <td class="text-center pa-0">
-                                        501
+                                    <td class="text-center">
+                                        <div>501</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div>VS</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div>481</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div>20</div>
                                     </td>
                                 </tr>
                             </tbody>
