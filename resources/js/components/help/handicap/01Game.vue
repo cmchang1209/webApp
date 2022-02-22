@@ -45,22 +45,22 @@
                                             {{ item }}
                                         </div>
                                     </td>
-                                    <td class="text-center pa-0">
+                                    <td width="15%" class="text-center pa-0">
                                         <div class="d-flex justify-center align-center">
                                             501
                                         </div>
                                     </td>
-                                    <td class="text-center pa-0">
+                                    <td width="15%" class="text-center pa-0">
                                         <div class="d-flex justify-center align-center">
                                             VS
                                         </div>
                                     </td>
-                                    <td class="text-center pa-0">
+                                    <td width="15%" class="text-center pa-0">
                                         <div class="d-flex justify-center align-center">
                                             {{ 501 - item * 20 }}
                                         </div>
                                     </td>
-                                    <td class="text-center pa-0">
+                                    <td width="15%" class="text-center pa-0">
                                         <div class="d-flex justify-center align-center">
                                             {{ item * 20 }}
                                         </div>
