@@ -35,13 +35,13 @@
                             <thead>
                                 <tr>
                                     <th>{{ $t('help', 'Rt difference') }}</th>
-                                    <th colspan="4"></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="item in 12" :key="item">
                                     <td class="pa-0" style="width: 35%;">
-                                        <div class="d-flex align-center pl-4 first">
+                                        <div class="d-flex align-center first">
                                             {{ item }}
                                         </div>
                                     </td>
