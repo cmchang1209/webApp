@@ -174,9 +174,8 @@
 .help-handicap-page {
     .help-handicap-01Game-page {
         .v-data-table {
-            tr {
-                background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
-            }
+            background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+            border-radius: 0;
 
             td,
             th {
