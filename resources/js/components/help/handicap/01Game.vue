@@ -32,12 +32,26 @@
                     </p>
                     <v-simple-table dense>
                         <template v-slot:default>
-                        	<thead>
-                        		<tr>
-                        			<th>1</th>
-                        			<th>2</th>
-                        		</tr>
-                        	</thead>
+                            <thead>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center pa-0" style="width: 40%;">
+                                        <div class="d-flex justify-center align-center">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td class="text-center pa-0">
+                                        <div class="d-flex justify-center align-center">
+                                            501
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </template>
                     </v-simple-table>
                     <!-- <v-simple-table dense>
