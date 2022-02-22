@@ -30,6 +30,16 @@
                     <p class="text-center mt-3">
                         <small>{{ $t('help', 'Example') }}（ 501 ）</small>
                     </p>
+                    <v-simple-table dense>
+                        <template v-slot:default>
+                        	<thead>
+                        		<tr>
+                        			<th>1</th>
+                        			<th>2</th>
+                        		</tr>
+                        	</thead>
+                        </template>
+                    </v-simple-table>
                     <!-- <v-simple-table dense>
                         <template v-slot:default>
                             <thead>
