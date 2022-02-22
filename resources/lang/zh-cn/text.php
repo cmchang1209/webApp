@@ -189,5 +189,22 @@ return [
 		[
 			"title" => "米老鼠",
 		]
+	],
+	"help-handicap-cricket" => [
+		[
+			"title" => "米老鼠",
+			"contants" => [
+				"每一级距让18分，最高让12级。",
+				"每一级距让1划，最高让8级。"
+			]
+		]
+	],
+	"help-handicap-count-up" => [
+		[
+			"title" => "高分赛",
+			"contants" => [
+				"每一级距让18分，最高让12级。"
+			]
+		]
 	]
 ];
