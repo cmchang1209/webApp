@@ -181,7 +181,7 @@
             td,
             th {
                 /* border-bottom-width: 0 !important; */
-                border-color: rgba(0,0,0,0);
+                border-color: rgba(0,0,0,0) !important;
             }
 
             tbody tr td {
@@ -190,6 +190,7 @@
                 padding-right: 1px;
                 position: relative; */
                 background-color: white;
+                border-right: 1px solid;
 
                 &:first-child {
                     /* padding-left: 1px; */
