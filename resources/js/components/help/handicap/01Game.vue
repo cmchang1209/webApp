@@ -60,7 +60,7 @@
                                             {{ 501 - item * 20 }}
                                         </div>
                                     </td>
-                                    <td width="15%" class="text-center pa-0">
+                                    <td class="text-center pa-0">
                                         <div class="d-flex justify-center align-center">
                                             {{ item * 20 }}
                                         </div>
