@@ -35,7 +35,10 @@
                             <thead>
                                 <tr>
                                     <th>{{ $t('help', 'Rt difference') }}</th>
-                                    <th colspan="4"></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
