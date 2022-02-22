@@ -40,7 +40,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="item in 12" :key="item">
-                                    <td width="40%">
+                                    <td width="40%" class="pa-0">
                                         <div class="d-flex align-center pl-4 first">
                                             {{ item }}
                                         </div>
