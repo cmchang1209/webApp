@@ -190,7 +190,7 @@
 
                     div {
                         position: absolute;
-                        width: 100%;
+                        width: calc(100% - 1px);
                         height: calc(100% - 1px);
                         background-color: white;
                         /* margin-right: 1px; */
