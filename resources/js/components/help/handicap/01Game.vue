@@ -8,7 +8,7 @@
                     <p class="text-justify font-weight-light" v-for="(contant, key1) in item.contants" :key="'contant-'+key+key1">
                         <small>{{ contant }}</small>
                     </p>
-                    <v-simple-table dense>
+                    <!-- <v-simple-table dense>
                         <template v-slot:default>
                             <thead>
                                 <tr>
@@ -26,7 +26,7 @@
                                 </tr>
                             </tbody>
                         </template>
-                    </v-simple-table>
+                    </v-simple-table> -->
                     <p class="text-center mt-3">
                         <small>{{ $t('help', 'Example') }}（ 501 ）</small>
                     </p>
@@ -41,14 +41,10 @@
                             <tbody>
                                 <tr>
                                     <td class="text-center pa-0" style="width: 40%;">
-                                        <div>
-                                            1
-                                        </div>
+                                        1
                                     </td>
                                     <td class="text-center pa-0">
-                                        <div>
-                                            501
-                                        </div>
+                                        501
                                     </td>
                                 </tr>
                             </tbody>

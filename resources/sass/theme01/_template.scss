@@ -180,17 +180,17 @@
 
             td,
             th {
-                border-bottom-width: 0 !important;
+                /* border-bottom-width: 0 !important; */
             }
 
             tbody tr td {
-                vertical-align: top;
+                /* vertical-align: top;
                 padding-left: 0;
                 padding-right: 1px;
-                position: relative;
+                position: relative; */
 
                 &:first-child {
-                    padding-left: 1px;
+                    /* padding-left: 1px; */
 
                     div {
                         width: calc(100% - 2px);
