@@ -45,7 +45,7 @@
                                             {{ item }}
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="pa-0">
                                         <div class="d-flex justify-center align-center">
                                             501
                                         </div>
