@@ -8,25 +8,27 @@
                     <p class="text-justify font-weight-light" v-for="(contant, key1) in item.contants" :key="'contant-'+key+key1">
                         <small>{{ contant }}</small>
                     </p>
-                    <!-- <v-simple-table dense>
+                    <v-simple-table dense>
                         <template v-slot:default>
-                            <thead>
-                                <tr>
-                                    <th v-for="th in tb1.ths" :key="th" class="text-center">{{ th }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="item in tb1.items" :key="Object.keys(item)[0]">
-                                    <td class="text-center pa-0" style="width: 50%;">
-                                        <div class="d-flex justify-center align-center">{{ Object.keys(item)[0] }}</div>
-                                    </td>
-                                    <td class="text-center pa-0">
-                                        <div class="d-flex justify-center align-center">{{ Object.values(item)[0] }}</div>
-                                    </td>
-                                </tr>
-                            </tbody>
+                        	<thead>
+                        		<tr>
+                        			<th v-for="th in tb1.ths" :key="th" class="text-center" style="width: 50%;">
+                                        {{ th }}
+                                    </th>
+                        		</tr>
+                        	</thead>
+                        	<tbody>
+                        		<tr v-for="item in tb1.items" :key="Object.keys(item)[0]">
+                        			<td class="text-center">
+                        				<div>{{ Object.keys(item)[0] }}</div>
+                        			</td>
+                        			<td class="text-center">
+                        				<div>{{ Object.values(item)[0] }}</div>
+                        			</td>
+                        		</tr>
+                        	</tbody>
                         </template>
-                    </v-simple-table> -->
+                    </v-simple-table>
                     <p class="text-center mt-3">
                         <small>{{ $t('help', 'Example') }}（ 501 ）</small>
                     </p>
@@ -34,7 +36,9 @@
                         <template v-slot:default>
                             <thead>
                                 <tr>
-                                    <th><div class="pl-4">{{ $t('help', 'Rt difference') }}</div></th>
+                                    <th>
+                                        <div class="pl-4">{{ $t('help', 'Rt difference') }}</div>
+                                    </th>
                                     <th colspan="4"></th>
                                 </tr>
                             </thead>
@@ -59,50 +63,6 @@
                             </tbody>
                         </template>
                     </v-simple-table>
-                    <!-- <v-simple-table dense>
-                        <template v-slot:default>
-                            <thead>
-                                <tr>
-                                    <th>{{ $t('help', 'Rt difference') }}</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="item in 12" :key="'ex-'+item">
-                                    <td class="pl-0 pr-" style="width: 35%;">
-                                        <div class="d-flex align-center pl-4 first">
-                                            {{ item }}
-                                        </div>
-                                    </td>
-                                    <td class="pa-0">
-                                        <div class="d-flex justify-center align-center">
-                                            501
-                                        </div>
-                                    </td>
-                                    <td class="text-center pa-0">
-                                        <div class="d-flex justify-center align-center">
-                                            501
-                                        </div>
-                                    </td>
-                                    <td class="text-center pa-0">
-                                        <div class="d-flex justify-center align-center">
-                                            VS
-                                        </div>
-                                    </td>
-                                    <td class="text-center pa-0">
-                                        <div class="d-flex justify-center align-center">
-                                            {{ 501 - item * 20 }}
-                                        </div>
-                                    </td>
-                                    <td class="text-center pa-0">
-                                        <div class="d-flex justify-center align-center">
-                                            {{ item * 20 }}
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </template>
-                    </v-simple-table> -->
                 </div>
             </div>
         </v-container>
