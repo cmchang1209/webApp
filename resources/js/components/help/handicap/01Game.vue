@@ -40,7 +40,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-center pa-0" style="width: 40%;">
+                                    <td class="text-center pa-0" style="width: 50%;">
                                         <div class="d-flex justify-center align-center">
                                             1
                                         </div>
