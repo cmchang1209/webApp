@@ -185,13 +185,6 @@
 
             tr {
                 td {
-                    &:first-child {
-                        div {
-                            width: calc(100% - 2px);
-                            left: 0;
-                        }
-                    }
-
                     vertical-align: top;
 
                     div {
@@ -203,6 +196,11 @@
                         margin: 1px;
                         top: -1px;
                         left: -1px;
+
+                        &.first {
+                            width: calc(100% - 2px);
+                            left: 0;
+                        }
                     }
                 }
             }
