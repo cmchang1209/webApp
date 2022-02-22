@@ -34,14 +34,14 @@
                         <template v-slot:default>
                             <thead>
                                 <tr>
-                                    <th><div class="pl-4">1</div></th>
+                                    <th><div class="pl-4">{{ $t('help', 'Rt difference') }}</div></th>
                                     <th colspan="4"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr v-for="item in 12" :key="'ex-'+item">
                                     <td style="width: 40%;">
-                                        <div class="pl-4">1</div>
+                                        <div class="pl-4">{{ item }}</div>
                                     </td>
                                     <td class="text-center">
                                         <div>501</div>
@@ -50,10 +50,10 @@
                                         <div>VS</div>
                                     </td>
                                     <td class="text-center">
-                                        <div>481</div>
+                                        <div>{{ 501 - item * 20 }}</div>
                                     </td>
                                     <td class="text-center">
-                                        <div>20</div>
+                                        <div>{{ item * 20 }}</div>
                                     </td>
                                 </tr>
                             </tbody>
