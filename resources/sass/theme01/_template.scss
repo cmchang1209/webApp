@@ -6,14 +6,17 @@
     }
 }
 
-.help-series-page {
-
+.help-series-page,
+.help-handicap-page {
     .divider {
         height: .25rem;
         background: linear-gradient(to right, $dark-blue, white) !important;
         margin-left: -16px;
         margin-right: -16px;
     }
+}
+
+.help-series-page {
 
     .help-series-table-page {
         .series-table {
@@ -164,6 +167,44 @@
             background: white;
             border-bottom-left-radius: 6px !important;
             border-bottom-right-radius: 6px !important;
+        }
+    }
+}
+
+.help-handicap-page {
+    .help-handicap-01Game-page {
+        .v-data-table {
+            tr {
+                background: linear-gradient(to right, $dark-blue, $grey-blue) !important;
+            }
+
+            td,
+            th {
+                border-bottom-width: 0 !important;
+                position: relative;
+            }
+
+            td {
+                vertical-align: top;
+
+                div {
+                    position: absolute;
+                    width: calc(100% - 1px);
+                    height: calc(100% - 1px);
+                    line-height: 100%;
+                    background-color: white;
+                    margin: 1px;
+                    top: -1px;
+                    left: -1px;
+                }
+
+                &:first-child {
+                    div {
+                        width: calc(100% - 2px);
+                        left: 0;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,12 +1,12 @@
 <template>
     <div class="help-handicap-page">
-        <v-container fluid>
+        <v-container fluid class="pa-0">
             <v-tabs v-model="tab" center-active show-arrows grow>
                 <v-tab v-for="item in items" :key="item.tab">
                     {{ $t('help', item.tab) }}
                 </v-tab>
             </v-tabs>
-            <v-tabs-items v-model="tab">
+            <v-tabs-items v-model="tab" touchless>
                 <v-tab-item v-for="item in items" :key="item.tab">
                     <handicap-rule v-if="item.tab === 'Rule'" />
                     <handicap-game v-else-if="item.tab === '01Game'" />

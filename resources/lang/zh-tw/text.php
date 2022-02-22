@@ -2,7 +2,8 @@
 
 return [
 	"golbal" =>	[
-		"Download" => "下載"
+		"Download" => "下載",
+		"Game" => "遊戲"
 	],
 	"help" => [
 		"Series" => "級數",
@@ -27,7 +28,10 @@ return [
 		"Team Season Level" => "隊伍賽季級數",
 		"Included in series calculation" => "列入級數計算",
 		"Not included in series calculation" => "不列入級數計算",
-		"Example" => "舉例"
+		"Example" => "舉例",
+		"Level by no" => ":params 級",
+		"Handicap per step" => "每差一級距讓分",
+		"Rt difference" => "級數差"
 	],
 	"help-series-introduce" => [
 		[
@@ -142,6 +146,39 @@ return [
 						"以玩家為單位，將該隊伍所有玩家的賽季級數加總後平均。"
 					]
 				]
+			]
+		]
+	],
+	"help-handicap-rule" => [
+		[
+			"title" => "FIDODARTS 自動讓級讓分",
+			"ols" => [
+				[
+					"title" => "高級分玩家讓低級分玩家固定分數。",
+				],
+				[
+					"title" => "沒登入玩家不進行讓級讓分。",
+				],
+				[
+					"title" => "賽局中，如果有其中一方的級分為零，則不進行自動讓級讓分。",
+				],
+				[
+					"title" => "當隊伍為兩人以上時，讓分標準以「團隊級分」計算。",
+				],
+				[
+					"title" => "「團隊級分」為隊員級分加總除以隊員數量。",
+				],
+				[
+					"title" => "最多讓12級。",
+				]
+			]
+		]
+	],
+	"help-handicap-01Game" => [
+		[
+			"title" => "01 遊戲",
+			"contants" => [
+				"每一級距讓分見下表"
 			]
 		]
 	]

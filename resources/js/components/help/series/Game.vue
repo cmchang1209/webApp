@@ -6,22 +6,24 @@
                 <div class="divider"></div>
                 <div class="pa-3">
                     <ol v-if="item.contants.ols">
-                        <li v-for="(ol, key1) in item.contants.ols" :key="ol.title">
-                            <p class="mb-1"><small>{{ ol.title }}</small></p>
-                            <p class="mb-1" v-for="(ct, key2) in ol.contants" :key="'game-ct-'+key1+key2"><small>{{ ct }}</small></p>
-                            <ul v-if="ol.uls" class="no-list-style">
-                                <li v-for="(ul, key3) in ol.uls" :key="ul.title">
-                                    <p class="mb-1">
-                                        <small class="blue--text text--darken-1">{{ ul.title }}</small>
-                                    </p>
-                                    <div class="px-2">
-                                        <p class="mb-1" v-for="(ulct, key4) in ul.contants" :key="'game-ulct-'+key1+key4">
-                                        	<small>{{ ulct }}</small>
+                        <small>
+                            <li v-for="(ol, key1) in item.contants.ols" :key="ol.title">
+                                <p class="mb-1">{{ ol.title }}</p>
+                                <p class="mb-1" v-for="(ct, key2) in ol.contants" :key="'game-ct-'+key1+key2">{{ ct }}</p>
+                                <ul v-if="ol.uls" class="no-list-style">
+                                    <li v-for="(ul, key3) in ol.uls" :key="ul.title">
+                                        <p class="mb-1 blue--text text--darken-1">
+                                            {{ ul.title }}
                                         </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                                        <div class="px-2">
+                                            <p class="mb-1" v-for="(ulct, key4) in ul.contants" :key="'game-ulct-'+key1+key4">
+                                                {{ ulct }}
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </small>
                     </ol>
                 </div>
             </div>

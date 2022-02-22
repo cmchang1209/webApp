@@ -31,8 +31,22 @@
     .help-series-introduce-page {}
 
     .ex.v-card {
-        .v-toolbar, .v-card__title {
+
+        .v-toolbar,
+        .v-card__title {
             color: white;
+        }
+    }
+}
+
+.help-handicap-page {
+    .help-handicap-01Game-page {
+        .v-data-table {
+            thead tr {
+                th {
+                    color: white !important;
+                }
+            }
         }
     }
 }

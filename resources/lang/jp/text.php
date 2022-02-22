@@ -1,5 +1,8 @@
 <?php
 
 return [
-	"golbal" =>	[]
+	"golbal" =>	[],
+	"help" => [
+		"Level By No" => "Level :params"
+	]
 ];
