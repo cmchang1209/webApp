@@ -17,7 +17,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="item in tb1.items" :key="Object.keys(item)[0]">
-                                    <td class="text-center pa-0">
+                                    <td class="text-center pa-0" style="width: 50%;">
                                         <div class="d-flex justify-center align-center first">{{ Object.keys(item)[0] }}</div>
                                     </td>
                                     <td class="text-center pa-0">
@@ -40,7 +40,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="item in 12" :key="item">
-                                    <td class="pa-0">
+                                    <td class="pa-0" style="width: 30%;">
                                         <div class="d-flex align-center pl-4 first">
                                             {{ item }}
                                         </div>
