@@ -19,7 +19,7 @@ export default {
             items: [
                 { name: 'Rating' },
                 { name: 'Handicap' },
-                { name: 'Test' }
+                //{ name: 'Test' }
             ],
         }
     },
