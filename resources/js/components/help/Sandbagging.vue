@@ -9,9 +9,9 @@
                         <ol v-if="item.contants.ols">
                             <small>
                                 <li v-for="(ol, key1) in item.contants.ols" :key="ol.title">
-                                    <p class="mb-5">{{ ol.title }}</p>
+                                    <p>{{ ol.title }}</p>
                                     <ul v-if="ol.uls" class="no-list-style">
-                                        <li class="mb-5" v-for="(ul, key3) in ol.uls" :key="ul.title">
+                                        <li v-for="(ul, key3) in ol.uls" :key="ul.title">
                                             <p class="mb-1 blue--text text--darken-1">
                                                 {{ ul.title }}
                                             </p>
