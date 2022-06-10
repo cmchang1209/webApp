@@ -9,6 +9,7 @@ import HelpIndex from '@/components/help/Index'
 import HelpEntrance from '@/components/help/Entrance'
 import HelpSeries from '@/components/help/Series'
 import HelpHandicap from '@/components/help/Handicap'
+import HelpSandbagging from '@/components/help/Sandbagging'
 
 import HelpTest from '@/components/help/Test'
 
@@ -37,6 +38,10 @@ export default new VueRouter({
                     path: 'handicap',
                     name: 'handicap',
                     component: HelpHandicap
+                }, {
+                    path: 'sandbagging',
+                    name: 'sandbagging',
+                    component: HelpSandbagging
                 }, {
                     path: 'test',
                     name: 'test',

@@ -8,6 +8,7 @@ return [
 	"help" => [
 		"Series" => "Rating",
 		"Handicap" => "ハンディキャップ",
+		"Sandbagging" => "Sandbagging",
 		"Series Table" => "ハンディキャップ表",
 		"Introduce" => "ハンディキャップ紹介",
 		"Game" => "普通のゲーム",
@@ -201,5 +202,7 @@ return [
 				"毎Ratingにつき18点のハンディキャップを負っています。それに、多くとも12級のハンディキャップしか負うことができません。"
 			]
 		]
+	],
+	"help-sandbagging" => [
 	]
 ];

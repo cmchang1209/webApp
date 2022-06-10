@@ -8,6 +8,7 @@ return [
 	"help" => [
 		"Series" => "Rating",
 		"Handicap" => "Handicap",
+		"Sandbagging" => "Sandbagging",
 		"Series Table" => "Rating Table",
 		"Introduce" => "Introduction",
 		"Game" => "Game",
@@ -203,5 +204,7 @@ return [
 				"1 difference level(RT) for 18 pts，the upper limit of difference levels for CountUp Games is 12"
 			]
 		]
+	],
+	"help-sandbagging" => [
 	]
 ];
